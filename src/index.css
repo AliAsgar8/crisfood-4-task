@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+
+
+.background{
+  background: url('../src//assets//images/webp/home17-hero-bg.webp') ;
+  /* background-size: cover; */
+  /* padding: 20px 50px 0px 50px ; */
+}
+
+@keyframes infiniteTranslate {
+  0% { transform: translateX(-10%); }
+  50% { transform: translateX(20%); }
+  100% { transform: translateX(-10%); }
+}
+
+.animate-infinite-translate {
+  animation: infiniteTranslate 10s infinite ease-in-out;
+}
+
+.animate-infinite-translateY {
+  animation: infiniteTranslateY 5s infinite ease-in-out;
+}
+
+@keyframes infiniteTranslateY {
+  0% {transform: translateY(-20%);}
+  50% {transform: translateY(0%);}
+  100% {transform: translateY(-20%);}
+}
+
+
+
+.about-banner-img{
+  background: url('../src/assets/images/webp/about-banner.webp') no-repeat center;
+  height: 300px;
+  padding: 0;
+}
+
+.contact-us{
+  border-top-left-radius: 50px;
+}
+
+
+@media (max-width:855px){
+  .header{
+    padding:20px 20px 0px 20px;
+  }
+}
